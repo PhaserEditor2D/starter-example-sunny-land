@@ -1,4 +1,4 @@
-# Basic JavaScript project template
+# Sunny Land example game
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-example-sunny-land)
 

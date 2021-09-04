@@ -1,5 +1,7 @@
 # Sunny Land example game
 
+![game snapshot](.github/sunny-land-snapshot.png)
+
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-example-sunny-land)
 
 This is a port to Phaser 3 of the [Sunny Land demo made by Luis Zuno](https://ansimuz.itch.io/sunny-land-pixel-game-art).

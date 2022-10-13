@@ -14,28 +14,27 @@
             "id": "dd7391b8-579a-4607-ad40-ad1093df5287",
             "label": "frog_idle_frog_idle_1",
             "components": [
-                "Physics",
-                "PhysicsBody",
                 "StartAnimation"
             ],
-            "Physics.bodyGravity": 500,
-            "PhysicsBody.bodyX": 16,
-            "PhysicsBody.bodyY": 16,
-            "PhysicsBody.bodyWidth": 8,
-            "PhysicsBody.bodyHeight": 11,
             "StartAnimation.animationKey": "frog/idle/frog-idle",
             "texture": {
                 "key": "atlas",
                 "frame": "frog/idle/frog-idle-1"
             },
             "x": 91,
-            "y": 51
+            "y": 51,
+            "ArcadeComponent.active": true,
+            "body.width": 21,
+            "body.height": 19,
+            "body.offset.x": 6,
+            "body.offset.y": 8
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

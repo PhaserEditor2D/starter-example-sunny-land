@@ -8,8 +8,11 @@ class Cherry extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 76, y ?? 31, texture || "atlas", frame ?? "cherry/cherry-1");
 
+		scene.physics.add.existing(this, true);
+		this.body.setOffset(0, 2);
+		this.body.setSize(17, 17, false);
+
 		// this (components)
-		new Physics(this);
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "cherry/cherry";
 

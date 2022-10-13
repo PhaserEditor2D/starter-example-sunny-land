@@ -14,28 +14,27 @@
             "id": "aacdd922-970c-4cf1-9874-633933215a62",
             "label": "opossum_opossum_1",
             "components": [
-                "Physics",
-                "PhysicsBody",
                 "StartAnimation"
             ],
-            "Physics.bodyGravity": 500,
-            "PhysicsBody.bodyX": 16,
-            "PhysicsBody.bodyY": 13,
-            "PhysicsBody.bodyWidth": 8,
-            "PhysicsBody.bodyHeight": 15,
             "StartAnimation.animationKey": "opossum/opossum",
             "texture": {
                 "key": "atlas",
                 "frame": "opossum/opossum-1"
             },
             "x": 157,
-            "y": 73
+            "y": 73,
+            "ArcadeComponent.active": true,
+            "body.width": 31,
+            "body.height": 20,
+            "body.offset.x": 2,
+            "body.offset.y": 6
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

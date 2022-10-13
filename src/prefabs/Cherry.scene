@@ -14,7 +14,6 @@
             "id": "3b74ba0b-f87a-404a-b049-8eafe7bebe9a",
             "label": "cherry_cherry_1",
             "components": [
-                "Physics",
                 "StartAnimation"
             ],
             "StartAnimation.animationKey": "cherry/cherry",
@@ -23,13 +22,19 @@
                 "frame": "cherry/cherry-1"
             },
             "x": 76,
-            "y": 31
+            "y": 31,
+            "ArcadeComponent.active": true,
+            "physicsType": 1,
+            "body.width": 17,
+            "body.height": 17,
+            "body.offset.y": 2
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

@@ -163,6 +163,7 @@ class Level extends Phaser.Scene {
 		const player = new Player(this, 738, 121);
 		this.add.existing(player);
 		player.flipX = true;
+		player.flipY = false;
 
 		// left_button
 		const left_button = this.add.image(26, 170, "left-button");
@@ -183,8 +184,20 @@ class Level extends Phaser.Scene {
 		jump_button.tintTopLeft = 16627125;
 
 		// lists
-		const items = [cherry, cherry_1, cherry_2, cherry_3, cherry_4, cherry_5, gem, gem_1, gem_2, gem_3, gem_1_1, gem_2_1]
-		const enemies = [frog_1, frog, opossum_1, opossum, eagle, eagle_2]
+		const items = [cherry, cherry_1, cherry_2, cherry_3, cherry_4, cherry_5, gem, gem_1, gem_2, gem_3, gem_1_1, gem_2_1];
+		const enemies = [frog_1, frog, opossum_1, opossum, eagle, eagle_2];
+
+		// colliderPlayerVsLayer
+		this.physics.add.collider(player, layer);
+
+		// colliderEnemiesVsLayer
+		this.physics.add.collider(enemies, layer);
+
+		// overlapPlayerVsItems
+		this.physics.add.overlap(player, items, this.pickItem, undefined, this);
+
+		// overlapPlayerVsEnemies
+		this.physics.add.overlap(player, enemies, undefined, this.checkAgainstEnemies, this);
 
 		// eagle (components)
 		const eagleCharacterMove = new CharacterMove(eagle);
@@ -230,6 +243,8 @@ class Level extends Phaser.Scene {
 	right_button;
 	/** @type {Phaser.GameObjects.Image} */
 	jump_button;
+	/** @type {Phaser.Tilemaps.Tilemap} */
+	map;
 	/** @type {Array<Cherry|Gem>} */
 	items;
 	/** @type {Array<Frog|Opossum|Eagle>} */
@@ -342,11 +357,6 @@ class Level extends Phaser.Scene {
 
 		this.map.setCollision([27, 29, 31, 33, 35, 37, 77, 81, 86, 87, 127, 129, 131, 133, 134, 135, 83, 84, 502, 504, 505, 529, 530, 333, 335, 337, 339, 366, 368, 262, 191, 193, 195, 241, 245, 291, 293, 295]);
 		this.setTopCollisionTiles([35, 36, 84, 86, 134, 135, 366, 367, 368, 262]);
-
-		this.physics.add.collider(this.player, this.layer);
-		this.physics.add.collider(this.enemies, this.layer);
-		this.physics.add.overlap(this.player, this.items, this.pickItem, null, this);
-		this.physics.add.overlap(this.player, this.enemies, this.checkAgainstEnemies, null, this);
 	}
 
 	/**

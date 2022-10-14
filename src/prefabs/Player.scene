@@ -14,28 +14,27 @@
             "id": "7510685d-e1b6-4e60-9ac0-d57acec2b000",
             "label": "player_climb_player_climb_1",
             "components": [
-                "Physics",
-                "PhysicsBody",
                 "StartAnimation"
             ],
-            "Physics.bodyGravity": 500,
-            "PhysicsBody.bodyX": 12,
-            "PhysicsBody.bodyY": 16,
-            "PhysicsBody.bodyWidth": 8,
-            "PhysicsBody.bodyHeight": 16,
             "StartAnimation.animationKey": "player/idle/player-idle",
             "texture": {
                 "key": "atlas",
                 "frame": "player/idle/player-idle-2"
             },
             "x": 78,
-            "y": 37
+            "y": 37,
+            "ArcadeComponent.active": true,
+            "body.width": 8,
+            "body.height": 16,
+            "body.offset.x": 12,
+            "body.offset.y": 16
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

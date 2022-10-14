@@ -14,27 +14,28 @@
             "id": "ac395a3b-f800-42c4-8bbb-2b45d140aa01",
             "label": "eagle_eagle_attack_1",
             "components": [
-                "Physics",
-                "PhysicsBody",
                 "StartAnimation"
             ],
-            "PhysicsBody.bodyX": 16,
-            "PhysicsBody.bodyY": 13,
-            "PhysicsBody.bodyWidth": 8,
-            "PhysicsBody.bodyHeight": 20,
             "StartAnimation.animationKey": "eagle/eagle-attack",
             "texture": {
                 "key": "atlas",
                 "frame": "eagle/eagle-attack-1"
             },
             "x": 95,
-            "y": 75
+            "y": 75,
+            "ArcadeComponent.active": true,
+            "allowGravity": false,
+            "body.width": 32,
+            "body.height": 30,
+            "body.offset.x": 3,
+            "body.offset.y": 9
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

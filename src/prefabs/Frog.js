@@ -8,14 +8,11 @@ class Frog extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 91, y ?? 51, texture || "atlas", frame ?? "frog/idle/frog-idle-1");
 
+		scene.physics.add.existing(this, false);
+		this.body.setOffset(6, 8);
+		this.body.setSize(21, 19, false);
+
 		// this (components)
-		const thisPhysics = new Physics(this);
-		thisPhysics.bodyGravity = 500;
-		const thisPhysicsBody = new PhysicsBody(this);
-		thisPhysicsBody.bodyX = 16;
-		thisPhysicsBody.bodyY = 16;
-		thisPhysicsBody.bodyWidth = 8;
-		thisPhysicsBody.bodyHeight = 11;
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "frog/idle/frog-idle";
 

@@ -8,13 +8,12 @@ class Eagle extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 95, y ?? 75, texture || "atlas", frame ?? "eagle/eagle-attack-1");
 
+		scene.physics.add.existing(this, false);
+		this.body.allowGravity = false;
+		this.body.setOffset(3, 9);
+		this.body.setSize(32, 30, false);
+
 		// this (components)
-		new Physics(this);
-		const thisPhysicsBody = new PhysicsBody(this);
-		thisPhysicsBody.bodyX = 16;
-		thisPhysicsBody.bodyY = 13;
-		thisPhysicsBody.bodyWidth = 8;
-		thisPhysicsBody.bodyHeight = 20;
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "eagle/eagle-attack";
 

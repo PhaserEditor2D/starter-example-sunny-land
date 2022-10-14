@@ -8,14 +8,11 @@ class Opossum extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 157, y ?? 73, texture || "atlas", frame ?? "opossum/opossum-1");
 
+		scene.physics.add.existing(this, false);
+		this.body.setOffset(2, 6);
+		this.body.setSize(31, 20, false);
+
 		// this (components)
-		const thisPhysics = new Physics(this);
-		thisPhysics.bodyGravity = 500;
-		const thisPhysicsBody = new PhysicsBody(this);
-		thisPhysicsBody.bodyX = 16;
-		thisPhysicsBody.bodyY = 13;
-		thisPhysicsBody.bodyWidth = 8;
-		thisPhysicsBody.bodyHeight = 15;
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "opossum/opossum";
 

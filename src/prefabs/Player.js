@@ -8,14 +8,11 @@ class Player extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 78, y ?? 37, texture || "atlas", frame ?? "player/idle/player-idle-2");
 
+		scene.physics.add.existing(this, false);
+		this.body.setOffset(12, 16);
+		this.body.setSize(8, 16, false);
+
 		// this (components)
-		const thisPhysics = new Physics(this);
-		thisPhysics.bodyGravity = 500;
-		const thisPhysicsBody = new PhysicsBody(this);
-		thisPhysicsBody.bodyX = 12;
-		thisPhysicsBody.bodyY = 16;
-		thisPhysicsBody.bodyWidth = 8;
-		thisPhysicsBody.bodyHeight = 16;
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "player/idle/player-idle";
 

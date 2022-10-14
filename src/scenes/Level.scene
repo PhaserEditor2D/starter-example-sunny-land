@@ -124,7 +124,7 @@
             "originY": 0
         },
         {
-            "type": "StaticTilemapLayer",
+            "type": "TilemapLayer",
             "id": "c57f7353-17d6-4012-83ac-fda50242ba7b",
             "label": "layer",
             "scope": "CLASS",
@@ -236,6 +236,10 @@
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "fcf43ee3-43ab-4672-999d-b0c7587d32e4",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "cherry",
             "components": [],
             "x": 480,
@@ -244,6 +248,10 @@
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "27e2fcea-96e5-41a6-bd56-e738e3e7c8be",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "cherry_1",
             "components": [],
             "x": 496,
@@ -252,6 +260,10 @@
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "76379785-8189-4658-8ac7-5205876bd1c1",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "cherry_2",
             "components": [],
             "x": 512,
@@ -260,6 +272,10 @@
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "e33b4989-2f84-4f05-a03c-79a7b7f31793",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "cherry_3",
             "components": [],
             "x": 368,
@@ -268,6 +284,10 @@
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "e840e778-2b0e-4a19-b602-42460f143197",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "cherry_4",
             "components": [],
             "x": 400,
@@ -276,6 +296,10 @@
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
             "id": "ced5270d-a365-4718-b66b-4096eed60df6",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "cherry_5",
             "components": [],
             "x": 384,
@@ -284,6 +308,10 @@
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
             "id": "146e5baa-4815-495a-a120-cc05bc5de6e4",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "gem",
             "components": [],
             "x": 64,
@@ -292,6 +320,10 @@
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
             "id": "27447e97-4960-4ba9-99e8-e3c7c62db26b",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "gem_1",
             "components": [],
             "x": 48,
@@ -300,6 +332,10 @@
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
             "id": "e440890f-72df-4ac1-882c-e6c5d7636900",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "gem_2",
             "components": [],
             "x": 80,
@@ -308,6 +344,10 @@
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
             "id": "e4e0ccdc-ef6f-47f1-a7db-dda2dae47eb2",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "gem_3",
             "components": [],
             "x": 672,
@@ -316,6 +356,10 @@
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
             "id": "9ac73f86-f819-4f56-acfd-ca99941b4a36",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "gem_1_1",
             "components": [],
             "x": 672,
@@ -324,6 +368,10 @@
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
             "id": "9171da7c-feb4-4422-b169-2fabc5d0d360",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "gem_2_1",
             "components": [],
             "x": 704,
@@ -332,6 +380,10 @@
         {
             "prefabId": "ac95e9be-57fc-4891-8771-239709abcf83",
             "id": "134df4f8-bce4-4dd0-9388-4e014f673f45",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "frog",
             "components": [],
             "x": 240,
@@ -340,6 +392,10 @@
         {
             "prefabId": "ac95e9be-57fc-4891-8771-239709abcf83",
             "id": "8610b26e-ffd7-4d2c-bd33-2552622c89ff",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "frog_1",
             "components": [],
             "x": 553,
@@ -348,6 +404,10 @@
         {
             "prefabId": "8a59bab4-8eb8-4fde-b4c7-2b77253af9f7",
             "id": "13f2667e-4032-4bbc-8a4f-5103d8aaae7d",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "eagle",
             "components": [
                 "CharacterMove"
@@ -360,6 +420,10 @@
         {
             "prefabId": "8a59bab4-8eb8-4fde-b4c7-2b77253af9f7",
             "id": "27cfe7de-f461-4c93-a157-4a2bf587c728",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "eagle_2",
             "components": [
                 "CharacterMove"
@@ -372,6 +436,10 @@
         {
             "prefabId": "dc8d8561-bce8-49fe-8272-6db97851c196",
             "id": "10256835-06a3-44a5-a3bf-6eda8c6ad0d7",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "opossum",
             "components": [],
             "x": 678,
@@ -380,6 +448,10 @@
         {
             "prefabId": "dc8d8561-bce8-49fe-8272-6db97851c196",
             "id": "cb19edd7-d04d-4358-b186-211628ea750a",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "opossum_1",
             "components": [],
             "x": 368,
@@ -390,14 +462,17 @@
             "id": "23ff743e-5a53-4dc0-9363-51ee5bffea8d",
             "unlock": [
                 "flipX",
-                "flipY"
+                "flipY",
+                "x",
+                "y"
             ],
             "label": "player",
             "scope": "CLASS",
             "components": [],
             "x": 738,
             "y": 121,
-            "flipX": true
+            "flipX": true,
+            "flipY": false
         },
         {
             "type": "Image",
@@ -468,12 +543,51 @@
                     "imageKey": "tileset"
                 }
             ]
+        },
+        {
+            "id": "42344ac5-f882-4b25-805a-5409091931ab",
+            "type": "Collider",
+            "label": "colliderPlayerVsLayer",
+            "scope": "METHOD",
+            "object1": "player",
+            "object2": "layer"
+        },
+        {
+            "id": "12bbe5cd-7093-4791-951a-3d27c3207c97",
+            "type": "Collider",
+            "label": "colliderEnemiesVsLayer",
+            "scope": "METHOD",
+            "object1": "enemies",
+            "object2": "layer"
+        },
+        {
+            "id": "89d53cdc-e0f4-4703-997c-3189b33f192c",
+            "type": "Collider",
+            "label": "overlapPlayerVsItems",
+            "scope": "METHOD",
+            "object1": "player",
+            "object2": "items",
+            "overlapOnly": true,
+            "collideCallback": "this.pickItem",
+            "callbackContext": "this"
+        },
+        {
+            "id": "9aacf202-4234-46ae-aba0-fd1def7413a8",
+            "type": "Collider",
+            "label": "overlapPlayerVsEnemies",
+            "scope": "METHOD",
+            "object1": "player",
+            "object2": "enemies",
+            "overlapOnly": true,
+            "processCallback": "this.checkAgainstEnemies",
+            "callbackContext": "this"
         }
     ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     },
     "lists": [
         {

@@ -20,6 +20,7 @@ If you have NodeJS installed, you can run the editor using the `editor` NPM scri
 
 ```bash
 $ npm install
+$ npm update
 $ npm run editor
 ```
 

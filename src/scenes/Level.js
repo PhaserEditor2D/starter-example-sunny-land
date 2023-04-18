@@ -267,7 +267,6 @@ class Level extends Phaser.Scene {
 
 		const cam = this.cameras.main;
 		cam.setBounds(0, 0, this.layer.width, this.layer.height);
-		cam.setRoundPixels(true);
 	}
 
 
@@ -275,12 +274,19 @@ class Level extends Phaser.Scene {
 
 		this.movePlayer();
 
+		// fix player position
+
+		this.player.x = Math.floor(this.player.x);
+
+		// fix camera position
+
 		const cam = this.cameras.main;
+		
+		// camera X follows the player
+		cam.scrollX = Math.floor(this.player.x - cam.width / 2);
 
-		const col = Math.floor(this.player.x / cam.width);
+		// cameras Y moves to a sector of the world
 		const row = Math.floor(this.player.y / cam.height);
-
-		cam.scrollX = col * cam.width;
 		cam.scrollY = row * cam.height;
 	}
 

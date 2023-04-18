@@ -177,17 +177,26 @@ class Level extends Phaser.Scene {
 		left_button.scaleY = 0.39899614692006335;
 		left_button.tintTopLeft = 16627125;
 
+		// controllerLeft
+		const controllerLeft = new ControllerButtonScript(left_button);
+
 		// right_button
 		const right_button = this.add.image(70, 170, "right-button");
 		right_button.scaleX = 0.39899614692006335;
 		right_button.scaleY = 0.39899614692006335;
 		right_button.tintTopLeft = 16627125;
 
+		// controllerRight
+		const controllerRight = new ControllerButtonScript(right_button);
+
 		// jump_button
 		const jump_button = this.add.image(262, 170, "jump-button");
 		jump_button.scaleX = 0.39899614692006335;
 		jump_button.scaleY = 0.39899614692006335;
 		jump_button.tintTopLeft = 16627125;
+
+		// controllerJump
+		const controllerJump = new ControllerButtonScript(jump_button);
 
 		// lists
 		const items = [cherry, cherry_1, cherry_2, cherry_3, cherry_4, cherry_5, gem, gem_1, gem_2, gem_3, gem_1_1, gem_2_1];
@@ -217,20 +226,20 @@ class Level extends Phaser.Scene {
 
 		// left_button (components)
 		new FixedToCamera(left_button);
-		new ControllerButton(left_button);
 
 		// right_button (components)
 		new FixedToCamera(right_button);
-		new ControllerButton(right_button);
 
 		// jump_button (components)
 		new FixedToCamera(jump_button);
-		new ControllerButton(jump_button);
 
 		this.layer = layer;
 		this.player = player;
+		this.controllerLeft = controllerLeft;
 		this.left_button = left_button;
+		this.controllerRight = controllerRight;
 		this.right_button = right_button;
+		this.controllerJump = controllerJump;
 		this.jump_button = jump_button;
 		this.map = map;
 		this.items = items;
@@ -243,10 +252,16 @@ class Level extends Phaser.Scene {
 	layer;
 	/** @type {Player} */
 	player;
+	/** @type {ControllerButtonScript} */
+	controllerLeft;
 	/** @type {Phaser.GameObjects.Image} */
 	left_button;
+	/** @type {ControllerButtonScript} */
+	controllerRight;
 	/** @type {Phaser.GameObjects.Image} */
 	right_button;
+	/** @type {ControllerButtonScript} */
+	controllerJump;
 	/** @type {Phaser.GameObjects.Image} */
 	jump_button;
 	/** @type {Phaser.Tilemaps.Tilemap} */
@@ -305,9 +320,9 @@ class Level extends Phaser.Scene {
 
 		const body = this.player.getBody();
 
-		const jumpDown = this.wasd.jump.isDown || ControllerButton.getComponent(this.jump_button).isDown;
-		const leftDown = this.wasd.left.isDown || ControllerButton.getComponent(this.left_button).isDown;
-		const rightDown = this.wasd.right.isDown || ControllerButton.getComponent(this.right_button).isDown;
+		const jumpDown = this.wasd.jump.isDown || this.controllerJump.isDown;
+		const leftDown = this.wasd.left.isDown || this.controllerLeft.isDown;
+		const rightDown = this.wasd.right.isDown || this.controllerRight.isDown;
 
 		if (jumpDown && body.onFloor()) {
 

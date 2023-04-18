@@ -562,8 +562,7 @@
             "scope": "CLASS",
             "components": [
                 "ScrollFactorX",
-                "FixedToCamera",
-                "ControllerButton"
+                "FixedToCamera"
             ],
             "texture": {
                 "key": "left-button"
@@ -573,7 +572,17 @@
             "scaleX": 0.39899614692006335,
             "scaleY": 0.39899614692006335,
             "tintTopLeft": "#fdb5b5",
-            "list": []
+            "list": [
+                {
+                    "prefabId": "a3580bf6-919a-468a-addd-4f8f573f9b96",
+                    "id": "4933f3da-7ed9-4edb-a3a7-b6b72a8c8ba9",
+                    "label": "controllerLeft",
+                    "scope": "CLASS",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         },
         {
             "type": "Image",
@@ -582,8 +591,7 @@
             "scope": "CLASS",
             "components": [
                 "ScrollFactorX",
-                "FixedToCamera",
-                "ControllerButton"
+                "FixedToCamera"
             ],
             "texture": {
                 "key": "right-button"
@@ -593,7 +601,17 @@
             "scaleX": 0.39899614692006335,
             "scaleY": 0.39899614692006335,
             "tintTopLeft": "#fdb5b5",
-            "list": []
+            "list": [
+                {
+                    "prefabId": "a3580bf6-919a-468a-addd-4f8f573f9b96",
+                    "id": "6b36b207-6587-4505-a323-7e1075f17d85",
+                    "label": "controllerRight",
+                    "scope": "CLASS",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         },
         {
             "type": "Image",
@@ -601,8 +619,7 @@
             "label": "jump_button",
             "scope": "CLASS",
             "components": [
-                "FixedToCamera",
-                "ControllerButton"
+                "FixedToCamera"
             ],
             "texture": {
                 "key": "jump-button"
@@ -612,7 +629,17 @@
             "scaleX": 0.39899614692006335,
             "scaleY": 0.39899614692006335,
             "tintTopLeft": "#fdb5b5",
-            "list": []
+            "list": [
+                {
+                    "prefabId": "a3580bf6-919a-468a-addd-4f8f573f9b96",
+                    "id": "08a08d26-2cf6-4018-b1fe-845dc62a4ec7",
+                    "label": "controllerJump",
+                    "scope": "CLASS",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [

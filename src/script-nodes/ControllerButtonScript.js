@@ -3,35 +3,21 @@
 
 /* START OF COMPILED CODE */
 
-/* START-USER-IMPORTS */
-/* END-USER-IMPORTS */
+class ControllerButtonScript extends ScriptNode {
 
-class ControllerButton extends UserComponent {
-
-	constructor(gameObject) {
-		super(gameObject);
-
-		this.gameObject = gameObject;
-		gameObject["__ControllerButton"] = this;
+	constructor(parent) {
+		super(parent);
 
 		/* START-USER-CTR-CODE */
-
-		this.isDown = false;
-
+		
 		this.gameObject.setInteractive();
 
 		/* END-USER-CTR-CODE */
 	}
 
-	/** @returns {ControllerButton} */
-	static getComponent(gameObject) {
-		return gameObject["__ControllerButton"];
-	}
-
-	/** @type {Phaser.GameObjects.Image} */
-	gameObject;
-
 	/* START-USER-CODE */
+
+	isDown = false;
 
 	update() {
 

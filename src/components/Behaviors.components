@@ -32,12 +32,6 @@
             "baseClass": "UserComponent",
             "gameObjectType": "Phaser.GameObjects.Image",
             "properties": []
-        },
-        {
-            "name": "ControllerButton",
-            "baseClass": "UserComponent",
-            "gameObjectType": "Phaser.GameObjects.Image",
-            "properties": []
         }
     ],
     "meta": {

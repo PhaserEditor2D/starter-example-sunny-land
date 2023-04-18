@@ -11,8 +11,7 @@ class EnemyDeath extends Phaser.GameObjects.Sprite {
 		// this (components)
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "enemy-death/enemy-death";
-		const thisAnimationKillOnComplete = new AnimationKillOnComplete(this);
-		thisAnimationKillOnComplete.animationKey = "enemy-death/enemy-death";
+		thisStartAnimation.killOnComplete = true;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

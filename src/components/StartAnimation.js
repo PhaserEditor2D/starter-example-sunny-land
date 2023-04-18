@@ -28,12 +28,21 @@ class StartAnimation extends UserComponent {
 	gameObject;
 	/** @type {string} */
 	animationKey = "";
+	/** @type {boolean} */
+	killOnComplete = false;
 
 	/* START-USER-CODE */
 
 	start() {
 
 		this.gameObject.play(this.animationKey);
+
+		if (this.killOnComplete) {
+
+			this.gameObject.once(
+				`animationcomplete-${this.animationKey}`,
+				() => this.gameObject.destroy());
+		}
 	}
 
 	/* END-USER-CODE */

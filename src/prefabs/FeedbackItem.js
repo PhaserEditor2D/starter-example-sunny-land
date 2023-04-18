@@ -11,8 +11,7 @@ class FeedbackItem extends Phaser.GameObjects.Sprite {
 		// this (components)
 		const thisStartAnimation = new StartAnimation(this);
 		thisStartAnimation.animationKey = "item-feedback/item-feedback";
-		const thisAnimationKillOnComplete = new AnimationKillOnComplete(this);
-		thisAnimationKillOnComplete.animationKey = "item-feedback/item-feedback";
+		thisStartAnimation.killOnComplete = true;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

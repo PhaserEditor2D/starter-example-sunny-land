@@ -22,13 +22,28 @@
                 "key": "loading"
             },
             "x": 144,
-            "y": 96
+            "y": 96,
+            "list": []
+        },
+        {
+            "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
+            "id": "a71f9aa7-f243-4984-94f3-d9e1d41c7e52",
+            "unlock": [
+                "sceneKey"
+            ],
+            "label": "startTitleAction",
+            "scope": "CLASS",
+            "sceneKey": "TitleScreen",
+            "components": [],
+            "nestedPrefabs": [],
+            "list": []
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

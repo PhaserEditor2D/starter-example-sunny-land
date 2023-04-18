@@ -20,7 +20,8 @@
                 "key": "back"
             },
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -32,7 +33,8 @@
             },
             "x": 768,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -44,7 +46,8 @@
             },
             "x": 384,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -57,7 +60,8 @@
             "x": 528,
             "y": 80,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -70,7 +74,8 @@
             "x": 704,
             "y": 80,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -83,7 +88,8 @@
             "x": 880,
             "y": 80,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -96,7 +102,8 @@
             "x": 176,
             "y": 80,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -109,7 +116,8 @@
             "x": 352,
             "y": 80,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -121,7 +129,8 @@
             },
             "y": 80,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "TilemapLayer",
@@ -129,6 +138,7 @@
             "label": "layer",
             "scope": "CLASS",
             "components": [],
+            "list": [],
             "tilemapId": "64b3ab7d-c3f8-4f4a-89be-421a17f9d776",
             "layerName": "Tile Layer 1",
             "tilesets": [
@@ -147,7 +157,8 @@
             "x": 496,
             "y": 67,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -161,7 +172,8 @@
             "x": 160,
             "y": 132,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -175,7 +187,8 @@
             "x": 176,
             "y": 300,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -189,7 +202,8 @@
             "x": 240,
             "y": 310,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -203,7 +217,8 @@
             "x": 368,
             "y": 304,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -217,7 +232,8 @@
             "x": 448,
             "y": 320,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "type": "Image",
@@ -231,7 +247,8 @@
             "x": 768,
             "y": 53,
             "originX": 0,
-            "originY": 0
+            "originY": 0,
+            "list": []
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -243,7 +260,9 @@
             "label": "cherry",
             "components": [],
             "x": 480,
-            "y": 80
+            "y": 80,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -255,7 +274,9 @@
             "label": "cherry_1",
             "components": [],
             "x": 496,
-            "y": 80
+            "y": 80,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -267,7 +288,9 @@
             "label": "cherry_2",
             "components": [],
             "x": 512,
-            "y": 80
+            "y": 80,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -279,7 +302,9 @@
             "label": "cherry_3",
             "components": [],
             "x": 368,
-            "y": 273
+            "y": 273,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -291,7 +316,9 @@
             "label": "cherry_4",
             "components": [],
             "x": 400,
-            "y": 272
+            "y": 272,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "67e1897c-2af2-411f-a5a2-77afe7cd6418",
@@ -303,7 +330,9 @@
             "label": "cherry_5",
             "components": [],
             "x": 384,
-            "y": 272
+            "y": 272,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
@@ -315,7 +344,9 @@
             "label": "gem",
             "components": [],
             "x": 64,
-            "y": 96
+            "y": 96,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
@@ -327,7 +358,9 @@
             "label": "gem_1",
             "components": [],
             "x": 48,
-            "y": 96
+            "y": 96,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
@@ -339,7 +372,9 @@
             "label": "gem_2",
             "components": [],
             "x": 80,
-            "y": 96
+            "y": 96,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
@@ -351,7 +386,9 @@
             "label": "gem_3",
             "components": [],
             "x": 672,
-            "y": 256
+            "y": 256,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
@@ -363,7 +400,9 @@
             "label": "gem_1_1",
             "components": [],
             "x": 672,
-            "y": 208
+            "y": 208,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "862d137b-8a45-453a-9663-d00573158814",
@@ -375,7 +414,9 @@
             "label": "gem_2_1",
             "components": [],
             "x": 704,
-            "y": 192
+            "y": 192,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "ac95e9be-57fc-4891-8771-239709abcf83",
@@ -387,7 +428,9 @@
             "label": "frog",
             "components": [],
             "x": 240,
-            "y": 144
+            "y": 144,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "ac95e9be-57fc-4891-8771-239709abcf83",
@@ -399,7 +442,9 @@
             "label": "frog_1",
             "components": [],
             "x": 553,
-            "y": 324
+            "y": 324,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "8a59bab4-8eb8-4fde-b4c7-2b77253af9f7",
@@ -409,13 +454,28 @@
                 "y"
             ],
             "label": "eagle",
-            "components": [
-                "CharacterMove"
-            ],
-            "CharacterMove.deltaY": 50,
-            "CharacterMove.duration": 1000,
+            "components": [],
             "x": 528,
-            "y": 96
+            "y": 96,
+            "nestedPrefabs": [],
+            "list": [
+                {
+                    "prefabId": "d27067c0-70b1-478b-9b7c-d2d2f08defa1",
+                    "id": "6bee0870-36a8-4261-acc9-2ae88b6d934e",
+                    "unlock": [
+                        "deltaX",
+                        "deltaY",
+                        "duration"
+                    ],
+                    "label": "characterMoveScript_1",
+                    "deltaX": 0,
+                    "deltaY": 50,
+                    "duration": 1000,
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         },
         {
             "prefabId": "8a59bab4-8eb8-4fde-b4c7-2b77253af9f7",
@@ -425,13 +485,28 @@
                 "y"
             ],
             "label": "eagle_2",
-            "components": [
-                "CharacterMove"
-            ],
-            "CharacterMove.deltaY": 50,
-            "CharacterMove.duration": 1000,
+            "components": [],
             "x": 96,
-            "y": 96
+            "y": 96,
+            "nestedPrefabs": [],
+            "list": [
+                {
+                    "prefabId": "d27067c0-70b1-478b-9b7c-d2d2f08defa1",
+                    "id": "022fa732-cdd6-490c-a3c7-8d2ea1246ba2",
+                    "unlock": [
+                        "deltaX",
+                        "deltaY",
+                        "duration"
+                    ],
+                    "label": "characterMoveScript",
+                    "deltaX": 0,
+                    "deltaY": 50,
+                    "duration": 1000,
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         },
         {
             "prefabId": "dc8d8561-bce8-49fe-8272-6db97851c196",
@@ -443,7 +518,9 @@
             "label": "opossum",
             "components": [],
             "x": 678,
-            "y": 147
+            "y": 147,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "dc8d8561-bce8-49fe-8272-6db97851c196",
@@ -455,7 +532,9 @@
             "label": "opossum_1",
             "components": [],
             "x": 368,
-            "y": 320
+            "y": 320,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "prefabId": "2bdd30b0-e379-4943-9d6b-ed6cb2ba5b0a",
@@ -472,7 +551,9 @@
             "x": 738,
             "y": 121,
             "flipX": true,
-            "flipY": false
+            "flipY": false,
+            "nestedPrefabs": [],
+            "list": []
         },
         {
             "type": "Image",
@@ -491,7 +572,8 @@
             "y": 170,
             "scaleX": 0.39899614692006335,
             "scaleY": 0.39899614692006335,
-            "tintTopLeft": "#fdb5b5"
+            "tintTopLeft": "#fdb5b5",
+            "list": []
         },
         {
             "type": "Image",
@@ -510,7 +592,8 @@
             "y": 170,
             "scaleX": 0.39899614692006335,
             "scaleY": 0.39899614692006335,
-            "tintTopLeft": "#fdb5b5"
+            "tintTopLeft": "#fdb5b5",
+            "list": []
         },
         {
             "type": "Image",
@@ -528,7 +611,8 @@
             "y": 170,
             "scaleX": 0.39899614692006335,
             "scaleY": 0.39899614692006335,
-            "tintTopLeft": "#fdb5b5"
+            "tintTopLeft": "#fdb5b5",
+            "list": []
         }
     ],
     "plainObjects": [

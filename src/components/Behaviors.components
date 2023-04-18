@@ -14,59 +14,15 @@
                     "type": {
                         "id": "animation-key"
                     }
-                }
-            ]
-        },
-        {
-            "name": "AnimationKillOnComplete",
-            "baseClass": "UserComponent",
-            "gameObjectType": "Phaser.GameObjects.Sprite",
-            "properties": [
-                {
-                    "name": "animationKey",
-                    "label": "Animation Key",
-                    "tooltip": "Kill the object when the given animation is completed.",
-                    "defValue": "",
-                    "customDefinition": false,
-                    "type": {
-                        "id": "animation-key"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "CharacterMove",
-            "baseClass": "UserComponent",
-            "gameObjectType": "Phaser.GameObjects.Image",
-            "properties": [
-                {
-                    "name": "deltaX",
-                    "label": "Delta X",
-                    "tooltip": "Delta X",
-                    "defValue": 0,
-                    "customDefinition": false,
-                    "type": {
-                        "id": "number"
-                    }
                 },
                 {
-                    "name": "deltaY",
-                    "label": "Delta Y",
-                    "tooltip": "Delta Y",
-                    "defValue": 0,
+                    "name": "killOnComplete",
+                    "label": "Kill On Complete",
+                    "tooltip": "If destroy the object after the animation completes.",
+                    "defValue": false,
                     "customDefinition": false,
                     "type": {
-                        "id": "number"
-                    }
-                },
-                {
-                    "name": "duration",
-                    "label": "Duration",
-                    "tooltip": "Duration",
-                    "defValue": 0,
-                    "customDefinition": false,
-                    "type": {
-                        "id": "number"
+                        "id": "boolean"
                     }
                 }
             ]

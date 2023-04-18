@@ -147,9 +147,15 @@ class Level extends Phaser.Scene {
 		const eagle = new Eagle(this, 528, 96);
 		this.add.existing(eagle);
 
+		// characterMoveScript_1
+		const characterMoveScript_1 = new CharacterMoveScript(eagle);
+
 		// eagle_2
 		const eagle_2 = new Eagle(this, 96, 96);
 		this.add.existing(eagle_2);
+
+		// characterMoveScript
+		const characterMoveScript = new CharacterMoveScript(eagle_2);
 
 		// opossum
 		const opossum = new Opossum(this, 678, 147);
@@ -199,15 +205,15 @@ class Level extends Phaser.Scene {
 		// overlapPlayerVsEnemies
 		this.physics.add.overlap(player, enemies, undefined, this.checkAgainstEnemies, this);
 
-		// eagle (components)
-		const eagleCharacterMove = new CharacterMove(eagle);
-		eagleCharacterMove.deltaY = 50;
-		eagleCharacterMove.duration = 1000;
+		// characterMoveScript_1 (prefab fields)
+		characterMoveScript_1.deltaX = 0;
+		characterMoveScript_1.deltaY = 50;
+		characterMoveScript_1.duration = 1000;
 
-		// eagle_2 (components)
-		const eagle_2CharacterMove = new CharacterMove(eagle_2);
-		eagle_2CharacterMove.deltaY = 50;
-		eagle_2CharacterMove.duration = 1000;
+		// characterMoveScript (prefab fields)
+		characterMoveScript.deltaX = 0;
+		characterMoveScript.deltaY = 50;
+		characterMoveScript.duration = 1000;
 
 		// left_button (components)
 		new FixedToCamera(left_button);
@@ -281,7 +287,7 @@ class Level extends Phaser.Scene {
 		// fix camera position
 
 		const cam = this.cameras.main;
-		
+
 		// camera X follows the player
 		cam.scrollX = Math.floor(this.player.x - cam.width / 2);
 

@@ -13,10 +13,7 @@
             "type": "Sprite",
             "id": "aacdd922-970c-4cf1-9874-633933215a62",
             "label": "opossum_opossum_1",
-            "components": [
-                "StartAnimation"
-            ],
-            "StartAnimation.animationKey": "opossum/opossum",
+            "components": [],
             "texture": {
                 "key": "atlas",
                 "frame": "opossum/opossum-1"
@@ -27,7 +24,21 @@
             "body.width": 31,
             "body.height": 20,
             "body.offset.x": 2,
-            "body.offset.y": 6
+            "body.offset.y": 6,
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "ba9e116a-5d4b-47c6-998b-bb081560cbae",
+                    "unlock": [
+                        "animationKey"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "opossum/opossum",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],

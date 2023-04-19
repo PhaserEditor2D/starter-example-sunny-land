@@ -12,9 +12,11 @@ class Opossum extends Phaser.GameObjects.Sprite {
 		this.body.setOffset(2, 6);
 		this.body.setSize(31, 20, false);
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "opossum/opossum";
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "opossum/opossum";
 
 		/* START-USER-CTR-CODE */
 

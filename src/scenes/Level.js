@@ -20,6 +20,21 @@ class Level extends Phaser.Scene {
 		const map = this.add.tilemap("map");
 		map.addTilesetImage("tileset", "tileset");
 
+		// spaceKey
+		const spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+
+		// leftKey
+		const leftKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
+
+		// rightKey
+		const rightKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
+
+		// upKey
+		const upKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
+
+		// downKey
+		const downKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
+
 		// back3
 		const back3 = this.add.image(0, 0, "back");
 		back3.setOrigin(0, 0);
@@ -147,9 +162,15 @@ class Level extends Phaser.Scene {
 		const eagle = new Eagle(this, 528, 96);
 		this.add.existing(eagle);
 
+		// characterMoveScript_1
+		const characterMoveScript_1 = new CharacterMoveScript(eagle);
+
 		// eagle_2
 		const eagle_2 = new Eagle(this, 96, 96);
 		this.add.existing(eagle_2);
+
+		// characterMoveScript
+		const characterMoveScript = new CharacterMoveScript(eagle_2);
 
 		// opossum
 		const opossum = new Opossum(this, 678, 147);
@@ -171,17 +192,35 @@ class Level extends Phaser.Scene {
 		left_button.scaleY = 0.39899614692006335;
 		left_button.tintTopLeft = 16627125;
 
+		// controllerLeft
+		const controllerLeft = new ControllerButtonScript(left_button);
+
+		// fixedToCameraScript_2
+		new FixedToCameraScript(left_button);
+
 		// right_button
 		const right_button = this.add.image(70, 170, "right-button");
 		right_button.scaleX = 0.39899614692006335;
 		right_button.scaleY = 0.39899614692006335;
 		right_button.tintTopLeft = 16627125;
 
+		// controllerRight
+		const controllerRight = new ControllerButtonScript(right_button);
+
+		// fixedToCameraScript_1
+		new FixedToCameraScript(right_button);
+
 		// jump_button
 		const jump_button = this.add.image(262, 170, "jump-button");
 		jump_button.scaleX = 0.39899614692006335;
 		jump_button.scaleY = 0.39899614692006335;
 		jump_button.tintTopLeft = 16627125;
+
+		// controllerJump
+		const controllerJump = new ControllerButtonScript(jump_button);
+
+		// fixedToCameraScript
+		new FixedToCameraScript(jump_button);
 
 		// lists
 		const items = [cherry, cherry_1, cherry_2, cherry_3, cherry_4, cherry_5, gem, gem_1, gem_2, gem_3, gem_1_1, gem_2_1];
@@ -199,34 +238,30 @@ class Level extends Phaser.Scene {
 		// overlapPlayerVsEnemies
 		this.physics.add.overlap(player, enemies, undefined, this.checkAgainstEnemies, this);
 
-		// eagle (components)
-		const eagleCharacterMove = new CharacterMove(eagle);
-		eagleCharacterMove.deltaY = 50;
-		eagleCharacterMove.duration = 1000;
+		// characterMoveScript_1 (prefab fields)
+		characterMoveScript_1.deltaX = 0;
+		characterMoveScript_1.deltaY = 50;
+		characterMoveScript_1.duration = 1000;
 
-		// eagle_2 (components)
-		const eagle_2CharacterMove = new CharacterMove(eagle_2);
-		eagle_2CharacterMove.deltaY = 50;
-		eagle_2CharacterMove.duration = 1000;
-
-		// left_button (components)
-		new FixedToCamera(left_button);
-		new ControllerButton(left_button);
-
-		// right_button (components)
-		new FixedToCamera(right_button);
-		new ControllerButton(right_button);
-
-		// jump_button (components)
-		new FixedToCamera(jump_button);
-		new ControllerButton(jump_button);
+		// characterMoveScript (prefab fields)
+		characterMoveScript.deltaX = 0;
+		characterMoveScript.deltaY = 50;
+		characterMoveScript.duration = 1000;
 
 		this.layer = layer;
 		this.player = player;
+		this.controllerLeft = controllerLeft;
 		this.left_button = left_button;
+		this.controllerRight = controllerRight;
 		this.right_button = right_button;
+		this.controllerJump = controllerJump;
 		this.jump_button = jump_button;
 		this.map = map;
+		this.spaceKey = spaceKey;
+		this.leftKey = leftKey;
+		this.rightKey = rightKey;
+		this.upKey = upKey;
+		this.downKey = downKey;
 		this.items = items;
 		this.enemies = enemies;
 
@@ -237,14 +272,30 @@ class Level extends Phaser.Scene {
 	layer;
 	/** @type {Player} */
 	player;
+	/** @type {ControllerButtonScript} */
+	controllerLeft;
 	/** @type {Phaser.GameObjects.Image} */
 	left_button;
+	/** @type {ControllerButtonScript} */
+	controllerRight;
 	/** @type {Phaser.GameObjects.Image} */
 	right_button;
+	/** @type {ControllerButtonScript} */
+	controllerJump;
 	/** @type {Phaser.GameObjects.Image} */
 	jump_button;
 	/** @type {Phaser.Tilemaps.Tilemap} */
 	map;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	spaceKey;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	leftKey;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	rightKey;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	upKey;
+	/** @type {Phaser.Input.Keyboard.Key} */
+	downKey;
 	/** @type {Array<Cherry|Gem>} */
 	items;
 	/** @type {Array<Frog|Opossum|Eagle>} */
@@ -258,8 +309,6 @@ class Level extends Phaser.Scene {
 
 		this.initColliders();
 
-		this.bindKeys();
-
 		this.initCamera();
 	}
 
@@ -267,7 +316,6 @@ class Level extends Phaser.Scene {
 
 		const cam = this.cameras.main;
 		cam.setBounds(0, 0, this.layer.width, this.layer.height);
-		cam.setRoundPixels(true);
 	}
 
 
@@ -275,12 +323,19 @@ class Level extends Phaser.Scene {
 
 		this.movePlayer();
 
+		// fix player position
+
+		this.player.x = Math.floor(this.player.x);
+
+		// fix camera position
+
 		const cam = this.cameras.main;
 
-		const col = Math.floor(this.player.x / cam.width);
-		const row = Math.floor(this.player.y / cam.height);
+		// camera X follows the player
+		cam.scrollX = Math.floor(this.player.x - cam.width / 2);
 
-		cam.scrollX = col * cam.width;
+		// cameras Y moves to a sector of the world
+		const row = Math.floor(this.player.y / cam.height);
 		cam.scrollY = row * cam.height;
 	}
 
@@ -293,9 +348,9 @@ class Level extends Phaser.Scene {
 
 		const body = this.player.getBody();
 
-		const jumpDown = this.wasd.jump.isDown || ControllerButton.getComponent(this.jump_button).isDown;
-		const leftDown = this.wasd.left.isDown || ControllerButton.getComponent(this.left_button).isDown;
-		const rightDown = this.wasd.right.isDown || ControllerButton.getComponent(this.right_button).isDown;
+		const jumpDown = this.upKey.isDown || this.spaceKey.isDown || this.controllerJump.isDown;
+		const leftDown = this.leftKey.isDown || this.controllerLeft.isDown;
+		const rightDown = this.rightKey.isDown || this.controllerRight.isDown;
 
 		if (jumpDown && body.onFloor()) {
 
@@ -320,7 +375,7 @@ class Level extends Phaser.Scene {
 
 			this.player.body.velocity.x = 0;
 
-			if (this.wasd.crouch.isDown) {
+			if (this.downKey.isDown) {
 
 				this.player.play("player/crouch/player-crouch", true);
 
@@ -341,17 +396,6 @@ class Level extends Phaser.Scene {
 			this.player.play("player/jump/player-jump-2", true);
 		}
 	}
-
-	bindKeys() {
-
-		this.wasd = {
-			jump: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE, true),
-			left: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT, true),
-			right: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT, true),
-			crouch: this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN, true)
-		};
-	}
-
 
 	initColliders() {
 

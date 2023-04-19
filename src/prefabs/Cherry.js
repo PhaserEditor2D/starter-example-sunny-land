@@ -12,9 +12,11 @@ class Cherry extends Phaser.GameObjects.Sprite {
 		this.body.setOffset(0, 2);
 		this.body.setSize(17, 17, false);
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "cherry/cherry";
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "cherry/cherry";
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

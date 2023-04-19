@@ -3,29 +3,16 @@
 
 /* START OF COMPILED CODE */
 
-/* START-USER-IMPORTS */
-/* END-USER-IMPORTS */
+class CharacterMoveScript extends ScriptNode {
 
-class CharacterMove extends UserComponent {
-
-	constructor(gameObject) {
-		super(gameObject);
-
-		this.gameObject = gameObject;
-		gameObject["__CharacterMove"] = this;
+	constructor(parent) {
+		super(parent);
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
-	/** @returns {CharacterMove} */
-	static getComponent(gameObject) {
-		return gameObject["__CharacterMove"];
-	}
-
-	/** @type {Phaser.GameObjects.Image} */
-	gameObject;
 	/** @type {number} */
 	deltaX = 0;
 	/** @type {number} */
@@ -35,7 +22,7 @@ class CharacterMove extends UserComponent {
 
 	/* START-USER-CODE */
 
-	start() {
+	awake() {
 
 		this.scene.tweens.add({
 			targets: this.gameObject,

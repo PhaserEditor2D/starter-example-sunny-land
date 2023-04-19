@@ -13,14 +13,14 @@ window.addEventListener("load", function () {
 		physics: {
 			default: "arcade",
 			arcade: {
-				debug: true,
+				debug: false,
 				gravity: {
 					y: 500
 				}
 			}
 		},
 		render: {
-			pixelArt: true
+			pixelArt: true,
 		},
 		input: {
 			activePointers: 3

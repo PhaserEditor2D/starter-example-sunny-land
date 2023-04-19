@@ -13,10 +13,7 @@
             "type": "Sprite",
             "id": "3b74ba0b-f87a-404a-b049-8eafe7bebe9a",
             "label": "cherry_cherry_1",
-            "components": [
-                "StartAnimation"
-            ],
-            "StartAnimation.animationKey": "cherry/cherry",
+            "components": [],
             "texture": {
                 "key": "atlas",
                 "frame": "cherry/cherry-1"
@@ -27,7 +24,21 @@
             "physicsType": 1,
             "body.width": 17,
             "body.height": 17,
-            "body.offset.y": 2
+            "body.offset.y": 2,
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "9fafff2a-75b0-4edc-b83c-ed1548953450",
+                    "unlock": [
+                        "animationKey"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "cherry/cherry",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],

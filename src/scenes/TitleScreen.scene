@@ -2,7 +2,6 @@
     "id": "80f0905d-0fb2-47a4-a786-09ec69cd7129",
     "sceneType": "SCENE",
     "settings": {
-        "snapEnabled": true,
         "snapWidth": 176,
         "snapHeight": 368,
         "preloadPackFiles": [],
@@ -24,7 +23,8 @@
             "originX": 0,
             "originY": 0,
             "width": 384,
-            "height": 240
+            "height": 240,
+            "list": []
         },
         {
             "type": "TileSprite",
@@ -39,7 +39,8 @@
             "originX": 0,
             "originY": 0,
             "width": 384,
-            "height": 368
+            "height": 368,
+            "list": []
         },
         {
             "type": "Image",
@@ -53,7 +54,8 @@
                 "key": "title-screen"
             },
             "x": 144,
-            "y": 90
+            "y": 90,
+            "list": []
         },
         {
             "type": "Image",
@@ -66,7 +68,8 @@
                 "key": "credits-text"
             },
             "x": 144,
-            "y": 174
+            "y": 174,
+            "list": []
         },
         {
             "type": "Image",
@@ -80,7 +83,8 @@
                 "key": "press-enter-text"
             },
             "x": 144,
-            "y": 149
+            "y": 149,
+            "list": []
         },
         {
             "type": "Image",
@@ -93,13 +97,28 @@
             },
             "x": 144,
             "originY": 0,
-            "visible": false
+            "visible": false,
+            "list": []
+        },
+        {
+            "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
+            "id": "163f4218-e557-4725-9e12-98fff92becde",
+            "unlock": [
+                "sceneKey"
+            ],
+            "label": "startLevelAction",
+            "scope": "CLASS",
+            "sceneKey": "Level",
+            "components": [],
+            "nestedPrefabs": [],
+            "list": []
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

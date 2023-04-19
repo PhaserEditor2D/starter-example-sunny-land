@@ -561,8 +561,7 @@
             "label": "left_button",
             "scope": "CLASS",
             "components": [
-                "ScrollFactorX",
-                "FixedToCamera"
+                "ScrollFactorX"
             ],
             "texture": {
                 "key": "left-button"
@@ -581,6 +580,14 @@
                     "components": [],
                     "nestedPrefabs": [],
                     "list": []
+                },
+                {
+                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+                    "id": "5ec03c78-43d5-4a5a-ad01-0c1e4e5e7e1b",
+                    "label": "fixedToCameraScript_2",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
                 }
             ]
         },
@@ -590,8 +597,7 @@
             "label": "right_button",
             "scope": "CLASS",
             "components": [
-                "ScrollFactorX",
-                "FixedToCamera"
+                "ScrollFactorX"
             ],
             "texture": {
                 "key": "right-button"
@@ -610,6 +616,14 @@
                     "components": [],
                     "nestedPrefabs": [],
                     "list": []
+                },
+                {
+                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+                    "id": "3094bae4-2ca7-409f-933f-0abaa8dc915e",
+                    "label": "fixedToCameraScript_1",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
                 }
             ]
         },
@@ -618,9 +632,7 @@
             "id": "87131438-7363-4eb8-9b9e-391f7cf70d4f",
             "label": "jump_button",
             "scope": "CLASS",
-            "components": [
-                "FixedToCamera"
-            ],
+            "components": [],
             "texture": {
                 "key": "jump-button"
             },
@@ -635,6 +647,14 @@
                     "id": "08a08d26-2cf6-4018-b1fe-845dc62a4ec7",
                     "label": "controllerJump",
                     "scope": "CLASS",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "63bd4c20-a9a7-478a-a031-5d0027804b88",
+                    "id": "726b9adc-3485-4944-a302-47b3dbecb0dc",
+                    "label": "fixedToCameraScript",
                     "components": [],
                     "nestedPrefabs": [],
                     "list": []
@@ -692,6 +712,35 @@
             "overlapOnly": true,
             "processCallback": "this.checkAgainstEnemies",
             "callbackContext": "this"
+        },
+        {
+            "id": "0a88375e-1229-4266-867a-1064ea42d333",
+            "type": "Keyboard.Key",
+            "label": "spaceKey"
+        },
+        {
+            "id": "c491690a-6458-4807-a19f-fe1763d1b327",
+            "type": "Keyboard.Key",
+            "label": "leftKey",
+            "keyCode": "LEFT"
+        },
+        {
+            "id": "86c00e99-0eeb-4d36-a14e-1ac1b2b76843",
+            "type": "Keyboard.Key",
+            "label": "rightKey",
+            "keyCode": "RIGHT"
+        },
+        {
+            "id": "be425e28-398e-44cf-9ee2-8e97810efd3a",
+            "type": "Keyboard.Key",
+            "label": "upKey",
+            "keyCode": "UP"
+        },
+        {
+            "id": "69a1571e-7dad-41b7-97d7-521addd8229e",
+            "type": "Keyboard.Key",
+            "label": "downKey",
+            "keyCode": "DOWN"
         }
     ],
     "meta": {

@@ -26,12 +26,6 @@
                     }
                 }
             ]
-        },
-        {
-            "name": "FixedToCamera",
-            "baseClass": "UserComponent",
-            "gameObjectType": "Phaser.GameObjects.Image",
-            "properties": []
         }
     ],
     "meta": {

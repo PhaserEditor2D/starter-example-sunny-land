@@ -8,10 +8,12 @@ class FeedbackItem extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 154, y ?? 80, texture || "atlas", frame ?? "item-feedback/item-feedback-1");
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "item-feedback/item-feedback";
-		thisStartAnimation.killOnComplete = true;
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "item-feedback/item-feedback";
+		startAnimationScript.killOnComplete = true;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

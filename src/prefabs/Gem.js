@@ -13,9 +13,11 @@ class Gem extends Phaser.GameObjects.Sprite {
 		this.body.immovable = true;
 		this.body.setSize(15, 13, false);
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "gem/gem";
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "gem/gem";
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

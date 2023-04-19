@@ -9,7 +9,7 @@ class ControllerButtonScript extends ScriptNode {
 		super(parent);
 
 		/* START-USER-CTR-CODE */
-		
+
 		this.gameObject.setInteractive();
 
 		/* END-USER-CTR-CODE */

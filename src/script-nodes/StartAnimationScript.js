@@ -3,29 +3,16 @@
 
 /* START OF COMPILED CODE */
 
-/* START-USER-IMPORTS */
-/* END-USER-IMPORTS */
+class StartAnimationScript extends ScriptNode {
 
-class StartAnimation extends UserComponent {
-
-	constructor(gameObject) {
-		super(gameObject);
-
-		this.gameObject = gameObject;
-		gameObject["__StartAnimation"] = this;
+	constructor(parent) {
+		super(parent);
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
-	/** @returns {StartAnimation} */
-	static getComponent(gameObject) {
-		return gameObject["__StartAnimation"];
-	}
-
-	/** @type {Phaser.GameObjects.Sprite} */
-	gameObject;
 	/** @type {string} */
 	animationKey = "";
 	/** @type {boolean} */

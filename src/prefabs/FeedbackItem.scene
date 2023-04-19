@@ -16,15 +16,28 @@
             "components": [
                 "StartAnimation"
             ],
-            "StartAnimation.animationKey": "item-feedback/item-feedback",
-            "StartAnimation.killOnComplete": true,
             "texture": {
                 "key": "atlas",
                 "frame": "item-feedback/item-feedback-1"
             },
             "x": 154,
             "y": 80,
-            "list": []
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "9da7b4aa-8113-42b1-b374-3426f89c51b6",
+                    "unlock": [
+                        "animationKey",
+                        "killOnComplete"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "item-feedback/item-feedback",
+                    "killOnComplete": true,
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],

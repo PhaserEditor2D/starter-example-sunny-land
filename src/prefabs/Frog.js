@@ -12,9 +12,11 @@ class Frog extends Phaser.GameObjects.Sprite {
 		this.body.setOffset(6, 8);
 		this.body.setSize(21, 19, false);
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "frog/idle/frog-idle";
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "frog/idle/frog-idle";
 
 		/* START-USER-CTR-CODE */
 

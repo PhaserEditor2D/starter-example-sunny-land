@@ -13,10 +13,7 @@
             "type": "Sprite",
             "id": "b3ff93b8-b890-4a26-867c-70cb7eb822e8",
             "label": "gem_gem_1",
-            "components": [
-                "StartAnimation"
-            ],
-            "StartAnimation.animationKey": "gem/gem",
+            "components": [],
             "texture": {
                 "key": "atlas",
                 "frame": "gem/gem-1"
@@ -28,7 +25,21 @@
             "pushable": false,
             "immovable": true,
             "body.width": 15,
-            "body.height": 13
+            "body.height": 13,
+            "list": [
+                {
+                    "prefabId": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+                    "id": "2df48380-412b-404e-b9d3-75cbcc66e30f",
+                    "unlock": [
+                        "animationKey"
+                    ],
+                    "label": "startAnimationScript",
+                    "animationKey": "gem/gem",
+                    "components": [],
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],

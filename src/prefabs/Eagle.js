@@ -13,9 +13,11 @@ class Eagle extends Phaser.GameObjects.Sprite {
 		this.body.setOffset(3, 9);
 		this.body.setSize(32, 30, false);
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "eagle/eagle-attack";
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "eagle/eagle-attack";
 
 		/* START-USER-CTR-CODE */
 		this.scene.tweens.add({

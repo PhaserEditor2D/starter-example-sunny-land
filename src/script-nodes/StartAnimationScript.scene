@@ -1,0 +1,49 @@
+{
+    "id": "61dde64d-6c82-4109-a4a2-c88cb5eb249d",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 288,
+        "borderHeight": 192
+    },
+    "displayList": [
+        {
+            "type": "ScriptNode",
+            "id": "c0f31509-c98c-43e1-b666-1591fbda74ed",
+            "label": "scriptnode_1",
+            "components": [],
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "prefabProperties": [
+        {
+            "name": "animationKey",
+            "label": "Animation Key",
+            "tooltip": "Animation Key",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "animation-key"
+            }
+        },
+        {
+            "name": "killOnComplete",
+            "label": "Kill On Complete",
+            "tooltip": "If destroy the object after the animation completes.",
+            "defValue": false,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        }
+    ]
+}

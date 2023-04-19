@@ -12,9 +12,11 @@ class Player extends Phaser.GameObjects.Sprite {
 		this.body.setOffset(12, 16);
 		this.body.setSize(8, 16, false);
 
-		// this (components)
-		const thisStartAnimation = new StartAnimation(this);
-		thisStartAnimation.animationKey = "player/idle/player-idle";
+		// startAnimationScript
+		const startAnimationScript = new StartAnimationScript(this);
+
+		// startAnimationScript (prefab fields)
+		startAnimationScript.animationKey = "player/idle/player-idle";
 
 		/* START-USER-CTR-CODE */
 

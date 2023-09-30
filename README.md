@@ -41,6 +41,18 @@ If Phaser Editor 2D Core is globally installed, you can run:
 ```bash
 $ PhaserEditor2D -project .
 ```
+## Gitpod
+
+This repository is ready for start coding in Gitpod, a Cloud Development Environment. You only need to [click on this link](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-basic-javascript) for starting a new workspace.
+
+This is what Gitpod does:
+
+- Creates a workspace for this project.
+- Opens VS Code to edit this repo.
+- Installs & updates the dependencies of this repo.
+- Runs Phaser Editor 2D Core server in port `1959`.
+
+In the **Ports** panel in VS Code, it shows the links for opening the editor (port `1959`). It gives you the options of copy the URL, open the URL in a preview panel, or open the URL in a new tab.
 
 ## Script Nodes
 

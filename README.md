@@ -43,7 +43,7 @@ $ PhaserEditor2D -project .
 ```
 ## Gitpod
 
-This repository is ready for start coding in Gitpod, a Cloud Development Environment. You only need to [click on this link](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-basic-javascript) for starting a new workspace.
+This repository is ready to start coding in Gitpod, a Cloud Development Environment. You only need to [click on [this link](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-basic-javascript) to start a new workspace.
 
 This is what Gitpod does:
 
@@ -58,4 +58,6 @@ In the **Ports** panel in VS Code, it shows the links for opening the editor (po
 
 Script nodes are logic objects. You can add a script node to the scene or a game object, for extending it with custom data and behavior.
 
-This project includes the [basic script nodes](https://github.com/PhaserEditor2D/script-nodes-basic-js) in the `src/script-nodes-basic/` folder. You can add your own script nodes in the `src/script-nodes/` folder.
+This project includes the script libraries:
+
+- [@phasereditor2d/scripts-core](https://github.com/PhaserEditor2D/phasereditor2d-scripts-core)

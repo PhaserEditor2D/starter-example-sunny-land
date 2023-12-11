@@ -227,16 +227,16 @@ class Level extends Phaser.Scene {
 		const enemies = [frog_1, frog, opossum_1, opossum, eagle, eagle_2];
 
 		// colliderPlayerVsLayer
-		this.physics.add.collider(player, layer);
+		const colliderPlayerVsLayer = this.physics.add.collider(player, layer);
 
 		// colliderEnemiesVsLayer
-		this.physics.add.collider(enemies, layer);
+		const colliderEnemiesVsLayer = this.physics.add.collider(enemies, layer);
 
 		// overlapPlayerVsItems
-		this.physics.add.overlap(player, items, this.pickItem, undefined, this);
+		const overlapPlayerVsItems = this.physics.add.overlap(player, items, this.pickItem, undefined, this);
 
 		// overlapPlayerVsEnemies
-		this.physics.add.overlap(player, enemies, undefined, this.checkAgainstEnemies, this);
+		const overlapPlayerVsEnemies = this.physics.add.overlap(player, enemies, undefined, this.checkAgainstEnemies, this);
 
 		// characterMoveScript_1 (prefab fields)
 		characterMoveScript_1.deltaX = 0;
